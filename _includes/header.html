@@ -1,0 +1,29 @@
+<header id="header" class="alt">
+  <h1><a href="{{ site.baseurl }}/">Top-San.ru</a></h1>
+  <a href="#nav">МЕНЮ</a>
+</header>
+
+<!-- Nav -->
+<nav id="nav">
+  <ul class="links">
+    <li><a href="index.html">Главная</a></li>
+    {% for default in site.defaults %}
+    <li>
+      <a href="{{ default.url }}">{{ default.title }}</a>
+    </li>
+    {% endfor %}
+    {% for page in site.pages %}
+    <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="nav__footer">
+    <dl>
+      <dt>Звоните нам</dt>
+      <dd><a href="tel:+74912991222">8 (4912) 99-12-22</a></dd>
+      <dt>Пишите нам</dt>
+      <dd><a href="mailto:zakaz@top-san.ru">zakaz@top-san.ru</a></dd>
+    </dl>
+  </div>
+</nav>

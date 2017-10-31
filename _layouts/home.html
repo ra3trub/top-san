@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="landing">
+
+  {% include header.html %}
+  <!-- Banner -->
+  <section id="banner">
+    <a href="/index.html"><img src="/images/logo.png" alt="Сантехник в Рязани"></a>
+    <h2>Сантехник в Рязани</h2>
+    <p>Выполним сантехнические работы любой сложности</p>
+    <ul class="actions">
+      <li><a href="price.html" class="button big special">Стоимость услуг</a></li>
+    </ul>
+  </section>
+  <section class="wrapper style1">
+    <div class="inner">
+      {{ content }}
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+</body>
+
+</html>
